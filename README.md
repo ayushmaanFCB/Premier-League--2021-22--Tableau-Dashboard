@@ -1,10 +1,6 @@
 # Premier League (2021-22) Football Analytics Tableau-Dashboard
 
 This project was designed as a part of the course CSE 260 (Data Visualization Tools and Techiques) of B.Tech CSE (AI ML) in Sri Ramachandra Faculty of Engineering and Technology, SRIHER, Chennai under the guidance of <b>Prof. Rhevathi M</b>.
-The team members are:
-- Ayushmaan Das
-- P Shashank
-- Mohammed Zahan
 
 <br>
 
