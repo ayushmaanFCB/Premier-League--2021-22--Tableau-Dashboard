@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: url("../images/pl_bg.jpg");
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+#pl_logo {
+    width: 30rem;
+}
+
+#home-cards {
+    background-color: "#37003c";
+}
+
+.card-body {
+    background-color: #37003c;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-body h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-body p {
+    font-size: 1.2rem;
+}
+
+#button1 {
+    background-color: #ff015b;
+    font-weight: bold;
+    color: #37003c;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-color: white;
+}
+
+#button1:hover {
+    background-color: #37003c;
+    color: #ff015b;
+}
+
+#viz1687795682431 {
+    padding: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#submit {
+    background-color: #ff015b;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #37003c;
+}
+
+#search-name {
+    width: 35rem;
+}
+
+h1 {
+    color: white;
+}
+
+.btn-primary {
+    background-color: #ff015b;
+    color: #37003c;
+    font-weight: bold;
+}

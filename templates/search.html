@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier League 2021 - 2022</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" />
+    <link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}" />
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+
+<body>
+
+    <a href="/"><img id="pl_logo" src="{{url_for('static', filename='images/pl_logo.png')}}"></a>
+
+    <div class="container-fluid" style="padding: 4rem;">
+        <center>
+            <input class=" form-control me-2" type="search" placeholder="Enter the player name"
+                aria-label="Enter the player name" id="search-name">
+        </center>
+        <br>
+        <button py-click="search()" id="submit" class="py-button" style="height: 100%;">SEARCH</button>
+    </div>
+    </div>
+
+    <hr style="color: white;">
+
+    <h1>The results will be displayed below:</h1>
+
+    <div class="container-fluid" >
+       <div class="row" id="results"></div>
+    </div>
+
+
+
+    <py-config>
+        packages = ['pandas']
+    </py-config>
+
+    <py-script>
+        import json, time
+        from js import localStorage, document, console, XMLHttpRequest
+        import pandas as pd
+
+        df = {{data}}
+        params = list(df.keys())
+
+        def search():
+            search = document.getElementById("search-name").value            
+
+            if document.getElementsByClassName("col-md-2") is not None:
+                elements = document.getElementsByClassName("col-md-2");
+                while(elements.length > 0):
+                    elements[0].parentNode.removeChild(elements[0])                
+
+            idv = -1
+            
+            for key, value in df['Player'].items():
+                if search == value:
+                    idv = key
+
+            if idv != -1:        
+                for param in params:
+
+                    col = document.createElement("div")
+                    col.className = "col-md-2"
+
+                    card = document.createElement("div")
+                    card.className = "card"
+                    card_body = document.createElement("div")
+                    card_body.className = "card-body"
+                    h5 = document.createElement("h5")
+                    h5.className = "card-title"
+                    a = document.createElement("a")
+                    a.className = "btn btn-primary"
+                    h5.textContent = param
+                    a.textContent = df[param][idv]
+
+                    card_body.appendChild(h5)
+                    card_body.appendChild(a)
+
+                    card.appendChild(card_body)
+
+                    col.appendChild(card)
+                    row = document.getElementById("results")
+                    row.appendChild(col)
+            
+            else:
+                pass                         
+    </py-script>
+</body>
