@@ -16,11 +16,13 @@ python app.py
 
 Screenshots:
 
-![Alt text](https://drive.google.com/file/d/1jmIFAj21AgZ0aDtTyuZCWRNZtIdb3nhb/view?usp=sharing)
+![Alt text](https://drive.google.com/file/d/1k55uMA6JuzpPjqUO-QCgUyJ1YTswsoRN/view?usp=drive_link)
 
 ![Alt text](https://drive.google.com/file/d/1jrdQHnFI4AU4hWciQj6Uz1YVhp7Sess1/view?usp=sharing)
 
-![Alt text](https://drive.google.com/file/d/1k55uMA6JuzpPjqUO-QCgUyJ1YTswsoRN/view?usp=sharing)
+![Alt text](https://drive.google.com/file/d/1jmIFAj21AgZ0aDtTyuZCWRNZtIdb3nhb/view?usp=drive_link)
+
+![Alt text](https://drive.google.com/file/d/1jqHRKeFaG0hTxlTwajqSrLnxOsHpfrhc/view?usp=drive_link)
 
 
 
